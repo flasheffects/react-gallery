@@ -10,7 +10,7 @@ const App = () => {
     useEffect(() => {
         const fetchData = async () => {
             const res = await fetch(
-                `http://jsonplaceholder.typicode.com/photos`,
+                'https://jsonplaceholder.typicode.com/photos',
             );
             const dataList = await res.json();
             setData(dataList);
